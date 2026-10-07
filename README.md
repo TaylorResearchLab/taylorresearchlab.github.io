@@ -19,8 +19,9 @@ Profile files:
 - Yuanchao Zhang: `people/yuanchao-zhang/index.md`
 - Kat Beigel: `people/kat-beigel/index.md`
 - Aditya Lahiri: `people/aditya-lahiri/index.md`
+- James Terry: `people/james-terry/index.md`
 
-The six member pages initially contain names only. Add roles, degrees, biographies, photos, and links only when supplied or confirmed by that person. Everything committed here is public. Do not add passwords, unpublished confidential material, or personal details that should remain private.
+New member pages initially contain names only. Add roles, degrees, biographies, photos, and links only when supplied or confirmed by that person. Everything committed here is public. Do not add passwords, unpublished confidential material, or personal details that should remain private.
 
 ## Site structure
 
