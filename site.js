@@ -1,4 +1,21 @@
 (() => {
+  if (window.location.pathname !== '/' && window.location.pathname !== '/index.html') return;
+  const routes = {
+    research: '/research/#research', resources: '/research/#resources',
+    publications: '/publications/#publications', people: '/people/#people',
+    ddkg: '/research/#ddkg', dulca: '/research/#dulca', devmap: '/research/#devmap',
+    devgraph: '/research/#devgraph', 'ai-ml': '/research/#ai-ml',
+    physics: '/research/#physics', biophysics: '/research/#biophysics'
+  };
+  const routeLegacyAnchor = () => {
+    const target = routes[window.location.hash.slice(1)];
+    if (target) window.location.replace(target);
+  };
+  window.addEventListener('hashchange', routeLegacyAnchor);
+  routeLegacyAnchor();
+})();
+
+(() => {
   const button = document.querySelector('.menu-toggle');
   const navigation = document.getElementById('main-nav');
   if (!button || !navigation) return;

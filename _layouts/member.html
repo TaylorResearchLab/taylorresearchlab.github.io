@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<section class="member-page section shell" aria-labelledby="member-title">
+  <a class="text-link profile-back" href="{{ '/people/' | relative_url }}">All people</a>
+  <p class="eyebrow">People</p>
+  <h1 id="member-title">{{ page.member_name | escape }}</h1>
+  {% if page.role %}<p class="member-role">{{ page.role | escape }}</p>{% endif %}
+  <div class="member-prose">{{ content }}</div>
+  <p class="profile-edit"><a class="text-link" href="https://github.com/TaylorResearchLab/taylorresearchlab.github.io/edit/main/{{ page.path }}">Edit this profile on GitHub</a></p>
+</section>

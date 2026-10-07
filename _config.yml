@@ -1,0 +1,7 @@
+title: Taylor Research Lab
+description: Knowledge graphs and developmental biology for research on birth defects, childhood cancer and human disease.
+url: https://dtaylorlab.org
+baseurl: ""
+markdown: kramdown
+exclude:
+  - README.md

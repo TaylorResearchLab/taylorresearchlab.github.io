@@ -102,3 +102,33 @@ footer{background:#102b3c}
 .team-list li{font-size:1rem;line-height:1.6}
 @media(max-width:850px){.team-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.team-section{margin-top:25px;padding-top:22px}.team-list{grid-template-columns:1fr;gap:8px}}
+
+/* Shared multi-page navigation and compact homepage sections. */
+.site-header nav a[aria-current="page"]{text-decoration:underline;text-underline-offset:7px;text-decoration-color:#8fc9d2}
+.preprint-preview{padding-block:25px;border-bottom:1px solid var(--line)}
+.preprint-heading{display:flex;align-items:baseline;gap:10px 24px;flex-wrap:wrap;margin-bottom:12px}
+.preprint-heading h2{font-size:1.125rem;letter-spacing:-.01em}
+.preprint-heading p{font-size:.8125rem;color:var(--muted)}
+.preprint-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px 34px}
+.preprint-list li{font-size:.875rem;line-height:1.55}
+.preprint-list a{font-family:var(--mono);font-weight:600;display:inline-block;margin-right:8px}
+.preprint-list span{color:#495d6c}
+.overview-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px}
+.overview-grid article{border-top:2px solid #78adb8;padding-top:16px}
+.overview-grid h3{font-family:var(--mono);font-size:1.05rem;font-weight:500}
+.overview-grid p{font-size:.9375rem;color:var(--muted);margin-top:10px}
+.home-overview .section-intro{margin-bottom:24px}
+.home-overview h2{font-size:1.5rem}
+.people-lead-name{font-family:var(--sans);font-size:1.2rem;font-weight:600;margin-top:8px}
+.people-lead-name a{text-decoration:none}
+.team-list a{font-weight:500}
+.member-page{min-height:55vh}
+.profile-back{margin-bottom:24px}
+.member-page h1{margin-top:7px;max-width:850px}
+.member-role{color:var(--muted);margin-top:10px}
+.member-prose{max-width:820px;margin-top:25px}
+.member-prose p+p,.member-prose ul,.member-prose h2,.member-prose h3{margin-top:18px}
+.member-prose h2{font-size:1.4rem}
+.profile-edit{margin-top:32px;padding-top:20px;border-top:1px solid var(--line);font-size:.8125rem}
+@media(max-width:850px){.overview-grid{gap:22px}.preprint-list{gap:12px 25px}}
+@media(max-width:600px){.preprint-preview{padding-block:21px}.preprint-heading{gap:5px;margin-bottom:10px}.preprint-heading p{flex-basis:100%}.preprint-list,.overview-grid{grid-template-columns:1fr}.preprint-list{gap:11px}.overview-grid{gap:23px}.member-page{min-height:50vh}}
