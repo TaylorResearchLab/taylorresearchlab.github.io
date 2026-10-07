@@ -134,3 +134,7 @@ footer{background:#102b3c}
 @media(max-width:600px){.preprint-preview{padding-block:21px}.preprint-heading{gap:5px;margin-bottom:10px}.preprint-heading p{flex-basis:100%}.preprint-list,.overview-grid{grid-template-columns:1fr}.preprint-list{gap:11px}.overview-grid{gap:23px}.member-page{min-height:50vh}}
 
 .publication h2{letter-spacing:normal}
+
+/* Profile links in the homepage affiliation line. */
+.affiliation-line a{color:inherit}
+.affiliation-line a:hover{color:#f2f7fa}
