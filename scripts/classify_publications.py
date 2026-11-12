@@ -26,6 +26,12 @@ def classify(records):
         r['methods']=[name for name,pattern in METHODS.items() if re.search(pattern,title)]
         r['domains']=[name for name,pattern in DOMAINS.items() if re.search(pattern,title)]
         r['classification_basis']='Title-based discovery tags; full-text classification not reviewed'
+        for evidence in r.get('classification_evidence', []):
+            group, tag = evidence['group'], evidence['tag']
+            if tag not in r[group]:
+                r[group].append(tag)
+        if r.get('classification_evidence'):
+            r['classification_basis']='Title-based discovery tags with source-supported additions'
     return records
 if __name__=='__main__':
     p=ROOT/'data/publications.json';data=json.loads(p.read_text());classify(data['records'])

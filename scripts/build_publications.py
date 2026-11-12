@@ -26,9 +26,9 @@ description: Research across informatics, genetics, molecular biology, medicine 
             out.append(f'<option value="{esc(category)}">{esc(category)} ({n})</option>')
         out.append('</select></label>')
     out.append('</div>')
-    out.append('''<div class="catalog-reset"><button type="button" id="clear-filters">All publications</button><span id="filter-help">Choose a topic to explore. Combine a method and an area to find their intersection.</span></div></div>
+    out.append('''<div class="catalog-reset"><button type="button" id="clear-filters">All publications</button><span id="filter-help">Choose either topic, or combine both. Counts update with your search and the other dropdown; unavailable combinations are grayed out. Tags are provisional, so zero means no currently tagged records, not necessarily no relevant research.</span></div></div>
 <p class="catalog-status" id="catalog-status" role="status" aria-live="polite">'''+str(len(records))+''' records</p>
-<details class="catalog-note"><summary>About this bibliography</summary><p>Based on a Google Scholar export supplied on November 12, 2026. The list includes journal records, preprints, conference contributions and other research outputs. “Journal record” does not distinguish full articles from abstracts or corrections. Topic tags aid discovery and are based on titles, not a full-text review. Papers can appear in multiple categories.</p><p>Reconciliation with OSF and NIH My Bibliography is pending. Related versions have not been silently merged; repeated-title records are marked for review. Two incomplete-title records are withheld pending correction. Years and citation details are reproduced from the export.</p></details>
+<details class="catalog-note"><summary>About this bibliography</summary><p>Based on a Google Scholar export supplied on November 12, 2026. The list includes journal records, preprints, conference contributions and other research outputs. “Journal record” does not distinguish full articles from abstracts or corrections. Topic tags aid discovery and are primarily based on titles, with selected corrections supported by article content. They are not a comprehensive full-text classification. Papers can appear in multiple categories.</p><p>Reconciliation with OSF and NIH My Bibliography is pending. Related versions have not been silently merged; repeated-title records are marked for review. Two incomplete-title records are withheld pending correction. Years and citation details are reproduced from the export.</p></details>
 <noscript><p>All records are listed below. Enable JavaScript to search and filter.</p></noscript>
 <div class="catalog-list">''')
     for r in records:
@@ -45,7 +45,7 @@ description: Research across informatics, genetics, molecular biology, medicine 
             out.append(f'<a class="catalog-source-link" href="https://scholar.google.com/scholar?q={quote(chr(34)+title+chr(34))}">Find this title in Scholar</a>')
         for link in r['links']:out.append(f'<a href="{esc(link["url"])}">{esc(link["label"])}</a>')
         out.append('</article>')
-    out.append('''</div><button type="button" id="show-more" hidden>Show more publications</button><p id="catalog-empty" hidden>No records match these filters. Try a broader search or clear the filters.</p>
+    out.append('''</div><button type="button" id="show-more" hidden>Show more publications</button><div id="catalog-empty" hidden><p id="catalog-empty-message"></p><div class="catalog-empty-actions"><button type="button" id="clear-search">Clear search</button><button type="button" id="empty-reset">Show all publications</button></div></div>
 <p class="catalog-footer">Additional source: <a href="https://www.med.upenn.edu/apps/faculty/index.php/g20001121/p8820417">Penn faculty profile</a>.</p>
 </section>
 <script src="{{ '/publications/catalog.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>

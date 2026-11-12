@@ -5561,8 +5561,10 @@
       "methods": [
         "Knowledge representation & semantic integration"
       ],
-      "domains": [],
-      "classification_basis": "Title-based discovery tags; full-text classification not reviewed",
+      "domains": [
+        "Cancer"
+      ],
+      "classification_basis": "Title-based discovery tags with source-supported Cancer tag from reported use cases",
       "review_flags": [],
       "public_listing": true,
       "format": "Journal record",
@@ -5570,6 +5572,14 @@
         {
           "label": "Read paper",
           "url": "https://www.nature.com/articles/s41597-024-04070-w"
+        }
+      ],
+      "classification_evidence": [
+        {
+          "group": "domains",
+          "tag": "Cancer",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11655564/",
+          "basis": "Cancer-focused graph analyses in the reported use cases."
         }
       ]
     },
@@ -7055,12 +7065,22 @@
       "methods": [
         "Knowledge representation & semantic integration"
       ],
-      "domains": [],
-      "classification_basis": "Title-based discovery tags; full-text classification not reviewed",
+      "domains": [
+        "Cancer"
+      ],
+      "classification_basis": "Title-based discovery tags with source-supported Cancer tag from reported use cases",
       "review_flags": [],
       "public_listing": true,
       "format": "Preprint",
-      "links": []
+      "links": [],
+      "classification_evidence": [
+        {
+          "group": "domains",
+          "tag": "Cancer",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12363844/",
+          "basis": "Cancer-focused graph analyses in the reported use cases."
+        }
+      ]
     },
     {
       "id": "scholar-215",
