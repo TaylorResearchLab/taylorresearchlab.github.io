@@ -18,17 +18,14 @@ description: Research across informatics, genetics, molecular biology, medicine 
   <div class="section-intro"><p class="eyebrow">Publications</p><div><h1 id="publications-title">Ideas across disciplines</h1><p>Explore research spanning knowledge representation, machine learning, data infrastructure, developmental biology, clinical research and physical science.</p></div></div>
   <div class="catalog-controls" id="catalog-controls" hidden>
     <label class="catalog-search">Search this research<input id="publication-search" type="search" placeholder="Title, author, journal or topic" autocomplete="off"></label>''']
-    out.append('<div class="catalog-topics">')
-    for key,label in [('methods','Methods & informatics'),('domains','Research areas')]:
-        out.append(f'<label for="filter-{key}">{label}<select id="filter-{key}" data-group="{key}" aria-describedby="filter-help"><option value="">All {"methods" if key == "methods" else "research areas"}</option>')
-        for category in data['categories'][key]:
-            n=sum(category in r[key] for r in records)
-            out.append(f'<option value="{esc(category)}">{esc(category)} ({n})</option>')
-        out.append('</select></label>')
-    out.append('</div>')
-    out.append('''<div class="catalog-reset"><button type="button" id="clear-filters">All publications</button><span id="filter-help">Choose either topic, or combine both. Counts update with your search and the other dropdown; unavailable combinations are grayed out. Tags are provisional, so zero means no currently tagged records, not necessarily no relevant research.</span></div></div>
+    out.append('<div class="catalog-topics"><label for="publication-topic">Browse by topic<select id="publication-topic" aria-describedby="filter-help"><option value="">All publications</option>')
+    for category in sorted(set(data['categories']['methods']+data['categories']['domains']),key=str.casefold):
+        n=sum(category in r['methods']+r['domains'] for r in records)
+        out.append(f'<option value="{esc(category)}">{esc(category)} ({n})</option>')
+    out.append('</select></label></div>')
+    out.append('''<div class="catalog-reset"><button type="button" id="clear-filters">All publications</button><span id="filter-help">Choose any topic to explore, or search within it. Papers can appear under multiple topics. Counts reflect your search; results are newest first.</span></div></div>
 <p class="catalog-status" id="catalog-status" role="status" aria-live="polite">'''+str(len(records))+''' records</p>
-<details class="catalog-note"><summary>About this bibliography</summary><p>Based on a Google Scholar export supplied on November 12, 2026. The list includes journal records, preprints, conference contributions and other research outputs. “Journal record” does not distinguish full articles from abstracts or corrections. Topic tags aid discovery and are primarily based on titles, with selected corrections supported by article content. They are not a comprehensive full-text classification. Papers can appear in multiple categories.</p><p>Reconciliation with OSF and NIH My Bibliography is pending. Related versions have not been silently merged; repeated-title records are marked for review. Two incomplete-title records are withheld pending correction. Years and citation details are reproduced from the export.</p></details>
+<details class="catalog-note"><summary>About this bibliography</summary><p>Based on a Google Scholar export supplied on November 12, 2026. The list includes journal records, preprints, conference contributions and other research outputs. “Journal record” does not distinguish full articles from abstracts or corrections. Topic tags aid discovery and are primarily based on titles, with selected corrections supported by article content. They are not a comprehensive full-text classification. Clinical study design &amp; diagnostic validation includes trials, observational cohorts and research-stage diagnostic evaluation; the tag does not imply clinical approval or established clinical utility. Papers can appear in multiple categories.</p><p>Reconciliation with OSF and NIH My Bibliography is pending. Related versions have not been silently merged; repeated-title records are marked for review. Two incomplete-title records are withheld pending correction. Years and citation details are reproduced from the export.</p></details>
 <noscript><p>All records are listed below. Enable JavaScript to search and filter.</p></noscript>
 <div class="catalog-list">''')
     for r in records:

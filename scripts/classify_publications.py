@@ -4,6 +4,7 @@ import json,re
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 METHODS={
+'Clinical study design & diagnostic validation':r'(?!)',
 'Knowledge representation & semantic integration':r'knowledge graph|ontology|ontolog|semantic|phenotype ontology|phenotype similarity|biomarkerkb|terminology standardization|bifo:',
 'Machine learning & statistical methods':r'embedding|mosaic:|classifier|classification|statistical|survival analysis|association stud|association scan|snp-set|gene-based analys|gene-based genome|gene-interaction-sensitive|representation learning|metabolic variation|models of cellular metabolism|pathvar|gene set analysis',
 'Data infrastructure & research software':r'data resource|data ecosystem|genelab|pipeline|workflow|interoperab|federated|fair |research support|reporting single-cell|scedar|rna-seq 2g|gsa-genie|open pediatric cancer|harmoniz|open science|agent skill|ddkg\. skill|personas|library services',
@@ -35,6 +36,6 @@ def classify(records):
     return records
 if __name__=='__main__':
     p=ROOT/'data/publications.json';data=json.loads(p.read_text());classify(data['records'])
-    data['categories']={'methods':list(METHODS),'domains':list(DOMAINS)}
+    data['categories']={'methods':[m for m in METHODS if m != 'Clinical study design & diagnostic validation']+['Clinical study design & diagnostic validation'],'domains':list(DOMAINS)}
     p.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     print('Unclassified:',[(r['id'],r['fields']['title']) for r in data['records'] if not r['methods'] and not r['domains']])

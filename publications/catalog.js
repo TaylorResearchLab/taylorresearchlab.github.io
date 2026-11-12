@@ -2,47 +2,40 @@
   const controls = document.getElementById('catalog-controls');
   if (!controls) return;
   const search = document.getElementById('publication-search');
-  const filters = Array.from(document.querySelectorAll('.catalog-topics select'));
+  const topic = document.getElementById('publication-topic');
   const more = document.getElementById('show-more');
   const records = Array.from(document.querySelectorAll('.catalog-record')).map(el => ({
     el, text: el.textContent.toLocaleLowerCase(), methods: JSON.parse(el.dataset.methods), domains: JSON.parse(el.dataset.domains)
   }));
-  const selected = {methods: '', domains: ''};
+  let selected = '';
   let limit = 20;
   const apply = () => {
     const query = search.value.trim().toLocaleLowerCase();
     const matched = records.filter(r => (!query || r.text.includes(query)) &&
-      (!selected.methods || r.methods.includes(selected.methods)) && (!selected.domains || r.domains.includes(selected.domains)));
+      (!selected || r.methods.includes(selected) || r.domains.includes(selected)));
     const visible = new Set(matched.slice(0, limit));
     records.forEach(r => { r.el.hidden = !visible.has(r); });
-    filters.forEach(select => {
-      const group = select.dataset.group;
-      const other = group === 'methods' ? 'domains' : 'methods';
-      const compatible = records.filter(r => (!query || r.text.includes(query)) &&
-        (!selected[other] || r[other].includes(selected[other])));
-      Array.from(select.options).forEach(option => {
-        const count = compatible.filter(r => !option.value || r[group].includes(option.value)).length;
-        const label = option.value || (group === 'methods' ? 'All methods' : 'All research areas');
-        option.textContent = `${label} (${count})`;
-        // Keep the selected value and the broadening option available for recovery.
-        option.disabled = !!option.value && count === 0 && option.value !== selected[group];
-      });
-      select.value = selected[group];
+    const searched = records.filter(r => !query || r.text.includes(query));
+    Array.from(topic.options).forEach(option => {
+      const count = searched.filter(r => !option.value || r.methods.includes(option.value) || r.domains.includes(option.value)).length;
+      option.textContent = `${option.value || 'All publications'} (${count})`;
+      option.disabled = !!option.value && count === 0 && option.value !== selected;
     });
+    topic.value = selected;
     document.getElementById('catalog-status').textContent = `${matched.length} matching records · showing ${Math.min(limit, matched.length)}`;
     document.getElementById('catalog-empty').hidden = matched.length !== 0;
     document.getElementById('catalog-empty-message').textContent = query
-      ? 'No records match this search with the selected topics. Clear the search, broaden a dropdown, or show all publications.'
-      : 'No records currently carry both selected topic tags. Tags are provisional, so this does not establish a gap in the research. Broaden a dropdown or show all publications.';
+      ? 'No records match this search within the selected topic. Clear the search, choose another topic, or show all publications.'
+      : 'No records currently match this topic. Choose another topic or show all publications.';
     document.getElementById('clear-search').hidden = !query;
     more.hidden = matched.length <= limit;
     more.textContent = `Show ${Math.min(20, matched.length - limit)} more publications`;
   };
   search.addEventListener('input', () => { limit = 20; apply(); });
-  filters.forEach(select => select.addEventListener('change', () => {
-    selected[select.dataset.group] = select.value;
+  topic.addEventListener('change', () => {
+    selected = topic.value;
     limit = 20; apply();
-  }));
+  });
   more.addEventListener('click', () => {
     const oldVisible = new Set(records.filter(r => !r.el.hidden));
     limit += 20; apply();
@@ -50,7 +43,7 @@
     if (next) { next.el.tabIndex = -1; next.el.focus(); }
   });
   const reset = () => {
-    search.value = ''; selected.methods = ''; selected.domains = ''; limit = 20; apply();
+    search.value = ''; selected = ''; limit = 20; apply();
   };
   document.getElementById('clear-filters').addEventListener('click', reset);
   document.getElementById('empty-reset').addEventListener('click', reset);
