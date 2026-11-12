@@ -138,3 +138,19 @@ footer{background:#102b3c}
 /* Profile links in the homepage affiliation line. */
 .affiliation-line a{color:inherit}
 .affiliation-line a:hover{color:#f2f7fa}
+
+/* Searchable bibliography, progressively enhanced from static HTML. */
+.catalog-controls{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;align-items:end;padding:22px;background:#f5f7f9;border:1px solid var(--line);border-radius:6px}
+.catalog-controls[hidden],.catalog-record[hidden],#catalog-empty[hidden]{display:none}
+.catalog-controls label{display:flex;flex-direction:column;gap:5px;font-size:.8rem;font-weight:600}
+.catalog-search{grid-column:1/-1}
+.catalog-controls input,.catalog-controls select{width:100%;font:inherit;font-weight:400;font-size:.95rem;padding:10px;border:1px solid #93a4b1;border-radius:3px;background:#fff;color:var(--ink);min-width:0}
+.catalog-controls input:focus-visible,.catalog-controls select:focus-visible{outline:3px solid #507ba0;outline-offset:2px}
+.catalog-controls button{justify-self:start;border:1px solid #456777;background:#fff;border-radius:3px;padding:7px 14px;color:var(--link);cursor:pointer}
+.catalog-status{margin-top:22px;font-size:.9rem;font-weight:600}.catalog-note{font-size:.85rem;color:var(--muted);margin:12px 0 25px;max-width:850px}.catalog-note summary{cursor:pointer;text-decoration:underline;text-underline-offset:3px}.catalog-note p{margin-top:10px}
+.catalog-record{padding:25px 0;border-top:1px solid var(--line);overflow-wrap:anywhere}.catalog-record h2{font-size:1.25rem;line-height:1.45;margin:7px 0 12px}.catalog-meta{font-size:.75rem;font-weight:600;color:#496576}.catalog-authors{font-size:.85rem;line-height:1.7;color:var(--muted)}.catalog-citation{font-size:.85rem;margin-top:5px}.catalog-tags{list-style:none;display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 0;padding:0}.catalog-tags li{font-size:.7rem;background:#edf3f5;color:#365568;padding:3px 8px;border-radius:3px}.catalog-review{font-size:.75rem;color:#775c24;margin-top:10px}.catalog-footer{margin-top:25px;font-size:.85rem}
+@media(max-width:700px){.catalog-controls{grid-template-columns:1fr 1fr;padding:15px;gap:12px}.catalog-record h2{font-size:1.1rem}}
+@media(max-width:400px){.catalog-controls{grid-template-columns:1fr}.catalog-search{grid-column:auto}}
+@media print{.catalog-controls{display:none}.catalog-record{break-inside:avoid}.catalog-tags li{background:none;border:1px solid #ccc}}
+/* Topic-first discovery: method and application are independent dimensions. */
+.catalog-controls{display:flex;flex-direction:column;align-items:stretch;gap:18px}.catalog-controls .catalog-search{width:100%}.topic-group summary{font-weight:600;font-size:.9rem;cursor:pointer}.topic-buttons{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.catalog-controls .topic-button{font-size:.8rem;line-height:1.5;text-align:left;border-color:#c1d0d9;padding:7px 11px;border-radius:4px}.topic-button span{font-size:.7rem;color:var(--muted);margin-left:6px}.catalog-controls .topic-button[aria-pressed="true"]{background:#224e63;color:white;border-color:#224e63}.topic-button[aria-pressed="true"] span{color:#e2eef3}.catalog-reset{display:flex;align-items:center;gap:15px;flex-wrap:wrap}.catalog-reset span{font-size:.75rem;color:var(--muted);flex:1;min-width:200px}#show-more{padding:10px 18px;background:#fff;color:var(--link);border:1px solid #93a4b1;border-radius:4px;cursor:pointer}#show-more[hidden]{display:none}

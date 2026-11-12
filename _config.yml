@@ -5,3 +5,5 @@ baseurl: ""
 markdown: kramdown
 exclude:
   - README.md
+  - scripts
+  - tests

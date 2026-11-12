@@ -40,3 +40,49 @@ New member pages initially contain names only. Add roles, degrees, biographies, 
 Use verified titles, years and links. Keep preprints clearly labeled as not peer reviewed. The compact preprint lists on the homepage and Publications page should be updated together. Add real entries only.
 
 Merging into `main` triggers the GitHub Pages build. Check the repository’s Actions tab for a successful `pages build and deployment` run before treating an update as published. For local previews, use a current GitHub Pages/Jekyll development environment; GitHub’s deployment remains the publication check.
+
+## Publication catalog maintenance
+
+The publication list is generated from `data/publications.json`. Public citation
+metadata only belongs here. Never export private lab notes, ideas, manuscript
+files or full-text copies into this repository.
+
+- The initial Scholar export contains 231 records, not 231 unique full articles.
+  All are preserved in the data. Two incomplete titles are withheld from display.
+- Reused citation keys and repeated titles remain separate and carry review flags.
+  Journal records may include abstracts/corrections; do not infer peer review from
+  the BibTeX entry type. OSF and NIH My Bibliography reconciliation remains pending.
+- Method and research-area tags can overlap. Initial tags are title-based,
+  reviewable discovery aids; full-text assessment is not represented as complete.
+  Spaceflight is not a separate category; relevant papers can be tagged for
+  mitochondrial biology and metabolism. Other papers remain in All publications.
+- RAWK is a separate accepted-manuscript record, based on the revised manuscript
+  and the PI's acceptance report; update its citation when published.
+- Lists are newest-first, with undated records last. Search, topic intersections,
+  and progressive display do not change that order. Without JavaScript all
+  records remain readable.
+
+To regenerate after editing reviewed metadata:
+
+```sh
+python3 scripts/build_publications.py
+python3 -m unittest discover -s tests
+node --check publications/catalog.js
+```
+
+For a new export, use an isolated Python environment and install
+`scripts/requirements-publications.txt`. The initial pipeline was:
+
+```sh
+python3 scripts/import_publications.py /path/to/export.bib
+python3 scripts/classify_publications.py
+python3 scripts/enrich_publications.py
+python3 scripts/build_publications.py
+```
+
+**Do not rerun import/classification over curated data without reconciling it:**
+these scripts rebuild the initial fields/tags and can overwrite later manual
+corrections. Retain stable record IDs and review changes before merging.
+The source-file SHA-256 in the JSON establishes provenance without publishing
+the uploaded file itself. `scripts/preprints.html` preserves the existing
+homepage-linked preprint preview; update it and the homepage together.
