@@ -26,15 +26,15 @@ for(const m of Array.from(method.options).slice(1).map(o=>o.value)){
     if(!expected)unavailable++;
   }
 }
-assert.equal(unavailable,14);
+assert.equal(unavailable,8);
 click('#clear-filters');choose('domains','Mitochondrial biology & metabolism');choose('methods','Machine learning & statistical methods');
 search.value='no-such-paper-xyz';search.dispatchEvent(new w.Event('input'));
 assert(!method.selectedOptions[0].disabled);assert(!area.selectedOptions[0].disabled);assert(!method.options[0].disabled);
-click('#clear-search');assert.equal(search.value,'');assert.equal(visible().length,3);assert.equal(area.value,'Mitochondrial biology & metabolism');
+click('#clear-search');assert.equal(search.value,'');assert.equal(visible().length,5);assert.equal(area.value,'Mitochondrial biology & metabolism');
 search.value='no-such-paper-xyz';search.dispatchEvent(new w.Event('input'));click('#empty-reset');assert.equal(visible().length,20);assert.equal(method.value,'');assert.equal(area.value,'');
 // Defensive recovery if a stale UI or script supplies a now-unavailable pair.
 choose('methods','Knowledge representation & semantic integration');choose('domains','Physics & biophysics');assert.equal(visible().length,0);assert(d.getElementById('catalog-empty-message').textContent.includes('provisional'));click('#empty-reset');
-console.log('PASS all 35 pair counts, 14 unavailable pairs, selected/All recovery, clear-search and empty-state reset');
+console.log('PASS all 35 pair counts, 8 unavailable pairs, selected/All recovery, clear-search and empty-state reset');
 
 click('#clear-filters');choose('methods','Knowledge representation & semantic integration');
 assert.equal(Array.from(area.options).find(o=>o.value==='Cancer').disabled,false);

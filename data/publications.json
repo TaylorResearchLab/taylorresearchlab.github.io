@@ -224,15 +224,26 @@
         "year": "2008",
         "publisher": "Pergamon"
       },
-      "methods": [],
+      "methods": [
+        "Machine learning & statistical methods"
+      ],
       "domains": [
         "Cancer"
       ],
-      "classification_basis": "Title-based discovery tags; full-text classification not reviewed",
+      "classification_basis": "Title-based discovery tags with source-supported additions",
       "review_flags": [],
       "public_listing": true,
       "format": "Journal record",
-      "links": []
+      "links": [],
+      "classification_evidence": [
+        {
+          "group": "methods",
+          "tag": "Machine learning & statistical methods",
+          "source": "https://europepmc.org/article/MED/18424034",
+          "scope": "Abstract",
+          "basis": "Matched tumor/normal microarray comparisons use Bioconductor differential-expression analyses to identify overall and subtype-specific expression patterns."
+        }
+      ]
     },
     {
       "id": "scholar-009",
@@ -2872,16 +2883,27 @@
         "year": "2018",
         "publisher": "Elsevier"
       },
-      "methods": [],
+      "methods": [
+        "Multiscale analysis & visualization"
+      ],
       "domains": [
         "Cancer",
         "Mitochondrial biology & metabolism"
       ],
-      "classification_basis": "Title-based discovery tags; full-text classification not reviewed",
+      "classification_basis": "Title-based discovery tags with source-supported additions",
       "review_flags": [],
       "public_listing": true,
       "format": "Journal record",
-      "links": []
+      "links": [],
+      "classification_evidence": [
+        {
+          "group": "methods",
+          "tag": "Multiscale analysis & visualization",
+          "source": "https://europepmc.org/article/MED/29309924",
+          "scope": "Abstract",
+          "basis": "The study integrates primary human tumors, cell lines and TCGA expression data with mitochondrial-genome and respiratory/metabolic functional measurements; this supports multiscale analysis, not a new measurement-method claim."
+        }
+      ]
     },
     {
       "id": "scholar-088",
@@ -3338,17 +3360,44 @@
         "year": "2019",
         "publisher": "Elsevier"
       },
-      "methods": [],
+      "methods": [
+        "Knowledge representation & semantic integration",
+        "Machine learning & statistical methods",
+        "Multiscale analysis & visualization"
+      ],
       "domains": [
         "Development & reproduction",
         "Genetics & congenital disease",
         "Molecular & cellular mechanisms"
       ],
-      "classification_basis": "Title-based discovery tags; full-text classification not reviewed",
+      "classification_basis": "Title-based discovery tags with source-supported additions",
       "review_flags": [],
       "public_listing": true,
       "format": "Journal record",
-      "links": []
+      "links": [],
+      "classification_evidence": [
+        {
+          "group": "methods",
+          "tag": "Knowledge representation & semantic integration",
+          "source": "https://europepmc.org/article/MED/31104773",
+          "scope": "Abstract",
+          "basis": "Integrates whole-exome sequencing, HPO-based phenotype similarity/statistical support, protein-dynamics modeling, and cellular functional validation."
+        },
+        {
+          "group": "methods",
+          "tag": "Machine learning & statistical methods",
+          "source": "https://europepmc.org/article/MED/31104773",
+          "scope": "Abstract",
+          "basis": "Integrates whole-exome sequencing, HPO-based phenotype similarity/statistical support, protein-dynamics modeling, and cellular functional validation."
+        },
+        {
+          "group": "methods",
+          "tag": "Multiscale analysis & visualization",
+          "source": "https://europepmc.org/article/MED/31104773",
+          "scope": "Abstract",
+          "basis": "Integrates whole-exome sequencing, HPO-based phenotype similarity/statistical support, protein-dynamics modeling, and cellular functional validation."
+        }
+      ]
     },
     {
       "id": "scholar-102",
@@ -3409,16 +3458,43 @@
         "year": "2019",
         "publisher": "John Wiley \\& Sons, Inc. Hoboken, USA"
       },
-      "methods": [],
+      "methods": [
+        "Knowledge representation & semantic integration",
+        "Machine learning & statistical methods",
+        "Multiscale analysis & visualization"
+      ],
       "domains": [
         "Development & reproduction",
         "Genetics & congenital disease"
       ],
-      "classification_basis": "Title-based discovery tags; full-text classification not reviewed",
+      "classification_basis": "Title-based discovery tags with source-supported additions",
       "review_flags": [],
       "public_listing": true,
       "format": "Journal record",
-      "links": []
+      "links": [],
+      "classification_evidence": [
+        {
+          "group": "methods",
+          "tag": "Knowledge representation & semantic integration",
+          "source": "https://europepmc.org/article/MED/31222980",
+          "scope": "Abstract",
+          "basis": "Constructs and clusters gene-regulation networks from CNVs; analyzes Gene Ontology and Mammalian Phenotype Ontology; integrates cohort CNV findings with developmental gene-expression patterns and enrichment tests."
+        },
+        {
+          "group": "methods",
+          "tag": "Machine learning & statistical methods",
+          "source": "https://europepmc.org/article/MED/31222980",
+          "scope": "Abstract",
+          "basis": "Constructs and clusters gene-regulation networks from CNVs; analyzes Gene Ontology and Mammalian Phenotype Ontology; integrates cohort CNV findings with developmental gene-expression patterns and enrichment tests."
+        },
+        {
+          "group": "methods",
+          "tag": "Multiscale analysis & visualization",
+          "source": "https://europepmc.org/article/MED/31222980",
+          "scope": "Abstract",
+          "basis": "Constructs and clusters gene-regulation networks from CNVs; analyzes Gene Ontology and Mammalian Phenotype Ontology; integrates cohort CNV findings with developmental gene-expression patterns and enrichment tests."
+        }
+      ]
     },
     {
       "id": "scholar-104",
@@ -5035,16 +5111,35 @@
         "year": "2021",
         "publisher": "Elsevier"
       },
-      "methods": [],
+      "methods": [
+        "Machine learning & statistical methods"
+      ],
       "domains": [
         "Infection, immunity & clinical outcomes",
-        "Molecular & cellular mechanisms"
+        "Molecular & cellular mechanisms",
+        "Mitochondrial biology & metabolism"
       ],
-      "classification_basis": "Title-based discovery tags; full-text classification not reviewed",
+      "classification_basis": "Title-based discovery tags with source-supported additions",
       "review_flags": [],
       "public_listing": true,
       "format": "Journal record",
-      "links": []
+      "links": [],
+      "classification_evidence": [
+        {
+          "group": "methods",
+          "tag": "Machine learning & statistical methods",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8481092/#sec4.5.12",
+          "scope": "Full text",
+          "basis": "Methods describe Cytoscape ClueGO/CluePedia and miRNet network-based target/pathway analyses. Results section 2.1 uses differential expression/upstream-regulator analysis and demonstrates mitochondrial-expression suppression, glycolysis and infection-related effects. These support network/statistical methods and mitochondrial/metabolic application."
+        },
+        {
+          "group": "domains",
+          "tag": "Mitochondrial biology & metabolism",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8481092/#sec4.5.12",
+          "scope": "Full text",
+          "basis": "Methods describe Cytoscape ClueGO/CluePedia and miRNet network-based target/pathway analyses. Results section 2.1 uses differential expression/upstream-regulator analysis and demonstrates mitochondrial-expression suppression, glycolysis and infection-related effects. These support network/statistical methods and mitochondrial/metabolic application."
+        }
+      ]
     },
     {
       "id": "scholar-153",
@@ -5559,12 +5654,16 @@
         "publisher": "Nature Publishing Group UK, London"
       },
       "methods": [
-        "Knowledge representation & semantic integration"
+        "Knowledge representation & semantic integration",
+        "Machine learning & statistical methods",
+        "Multiscale analysis & visualization"
       ],
       "domains": [
-        "Cancer"
+        "Cancer",
+        "Genetics & congenital disease",
+        "Development & reproduction"
       ],
-      "classification_basis": "Title-based discovery tags with source-supported Cancer tag from reported use cases",
+      "classification_basis": "Title-based discovery tags with source-supported additions",
       "review_flags": [],
       "public_listing": true,
       "format": "Journal record",
@@ -5580,6 +5679,41 @@
           "tag": "Cancer",
           "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11655564/",
           "basis": "Cancer-focused graph analyses in the reported use cases."
+        },
+        {
+          "group": "methods",
+          "tag": "Machine learning & statistical methods",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11655564/#Sec50",
+          "scope": "Full text",
+          "basis": "Use Case 1 predicts tetralogy-of-Fallot genes; Use Case 3 links CNS abnormalities and neoplasms by shortest paths. Node2Vec/UMAP validation (Figure 11) supports machine learning and multiscale visualization. Retains existing graph/ontology/data-integration tags."
+        },
+        {
+          "group": "methods",
+          "tag": "Multiscale analysis & visualization",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11655564/#Sec50",
+          "scope": "Full text",
+          "basis": "Use Case 1 predicts tetralogy-of-Fallot genes; Use Case 3 links CNS abnormalities and neoplasms by shortest paths. Node2Vec/UMAP validation (Figure 11) supports machine learning and multiscale visualization. Retains existing graph/ontology/data-integration tags."
+        },
+        {
+          "group": "domains",
+          "tag": "Cancer",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11655564/#Sec50",
+          "scope": "Full text",
+          "basis": "Use Case 1 predicts tetralogy-of-Fallot genes; Use Case 3 links CNS abnormalities and neoplasms by shortest paths. Node2Vec/UMAP validation (Figure 11) supports machine learning and multiscale visualization. Retains existing graph/ontology/data-integration tags."
+        },
+        {
+          "group": "domains",
+          "tag": "Genetics & congenital disease",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11655564/#Sec50",
+          "scope": "Full text",
+          "basis": "Use Case 1 predicts tetralogy-of-Fallot genes; Use Case 3 links CNS abnormalities and neoplasms by shortest paths. Node2Vec/UMAP validation (Figure 11) supports machine learning and multiscale visualization. Retains existing graph/ontology/data-integration tags."
+        },
+        {
+          "group": "domains",
+          "tag": "Development & reproduction",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11655564/#Sec50",
+          "scope": "Full text",
+          "basis": "Use Case 1 predicts tetralogy-of-Fallot genes; Use Case 3 links CNS abnormalities and neoplasms by shortest paths. Node2Vec/UMAP validation (Figure 11) supports machine learning and multiscale visualization. Retains existing graph/ontology/data-integration tags."
         }
       ]
     },
@@ -5970,16 +6104,26 @@
         "publisher": "American Physiological Society, Rockville, MD"
       },
       "methods": [
-        "Multiscale analysis & visualization"
+        "Multiscale analysis & visualization",
+        "Machine learning & statistical methods"
       ],
       "domains": [
         "Genetics & congenital disease"
       ],
-      "classification_basis": "Title-based discovery tags; full-text classification not reviewed",
+      "classification_basis": "Title-based discovery tags with source-supported additions",
       "review_flags": [],
       "public_listing": true,
       "format": "Journal record",
-      "links": []
+      "links": [],
+      "classification_evidence": [
+        {
+          "group": "methods",
+          "tag": "Machine learning & statistical methods",
+          "source": "https://europepmc.org/article/MED/37916288",
+          "scope": "Abstract",
+          "basis": "Uses machine-learning feature selection and a five-peptide risk classifier, tested by blinded assignment of six additional urine samples; adds statistical/ML methods without asserting clinical validation beyond this pilot."
+        }
+      ]
     },
     {
       "id": "scholar-181",
@@ -6514,16 +6658,35 @@
         "year": "2025",
         "publisher": "Elsevier"
       },
-      "methods": [],
+      "methods": [
+        "Multiscale analysis & visualization"
+      ],
       "domains": [
         "Cancer",
-        "Molecular & cellular mechanisms"
+        "Molecular & cellular mechanisms",
+        "Mitochondrial biology & metabolism"
       ],
-      "classification_basis": "Title-based discovery tags; full-text classification not reviewed",
+      "classification_basis": "Title-based discovery tags with source-supported additions",
       "review_flags": [],
       "public_listing": true,
       "format": "Journal record",
-      "links": []
+      "links": [],
+      "classification_evidence": [
+        {
+          "group": "methods",
+          "tag": "Multiscale analysis & visualization",
+          "source": "https://europepmc.org/article/MED/40021043",
+          "scope": "Abstract",
+          "basis": "Integrates transcriptomic changes, glycolytic metabolic reprogramming and chromatin-accessibility changes in healthy HSPCs exposed to AML. Adds multiscale analysis and metabolic application."
+        },
+        {
+          "group": "domains",
+          "tag": "Mitochondrial biology & metabolism",
+          "source": "https://europepmc.org/article/MED/40021043",
+          "scope": "Abstract",
+          "basis": "Integrates transcriptomic changes, glycolytic metabolic reprogramming and chromatin-accessibility changes in healthy HSPCs exposed to AML. Adds multiscale analysis and metabolic application."
+        }
+      ]
     },
     {
       "id": "scholar-198",
@@ -6842,16 +7005,27 @@
         "year": "2025",
         "publisher": "American Society for Clinical Investigation"
       },
-      "methods": [],
+      "methods": [
+        "Multiscale analysis & visualization"
+      ],
       "domains": [
         "Genetics & congenital disease",
         "Molecular & cellular mechanisms"
       ],
-      "classification_basis": "Title-based discovery tags; full-text classification not reviewed",
+      "classification_basis": "Title-based discovery tags with source-supported additions",
       "review_flags": [],
       "public_listing": true,
       "format": "Journal record",
-      "links": []
+      "links": [],
+      "classification_evidence": [
+        {
+          "group": "methods",
+          "tag": "Multiscale analysis & visualization",
+          "source": "https://europepmc.org/article/MED/40179146",
+          "scope": "Abstract",
+          "basis": "Explicit multimodal analysis combines single-cell sequencing, ATM-activation assays, telomere dysfunction-induced foci and cell-growth assays in telomere biology disorders with clonal hematopoiesis."
+        }
+      ]
     },
     {
       "id": "scholar-208",
@@ -6911,15 +7085,26 @@
         "year": "2025",
         "publisher": "Elsevier"
       },
-      "methods": [],
+      "methods": [
+        "Multiscale analysis & visualization"
+      ],
       "domains": [
         "Infection, immunity & clinical outcomes"
       ],
-      "classification_basis": "Title-based discovery tags; full-text classification not reviewed",
+      "classification_basis": "Title-based discovery tags with source-supported additions",
       "review_flags": [],
       "public_listing": true,
       "format": "Journal record",
-      "links": []
+      "links": [],
+      "classification_evidence": [
+        {
+          "group": "methods",
+          "tag": "Multiscale analysis & visualization",
+          "source": "https://europepmc.org/article/MED/40311614",
+          "scope": "Abstract",
+          "basis": "Combines single-cell transcriptional analysis, human-brain validation, mouse microglial replacement, histopathology and survival outcomes in monogenic Krabbe disease."
+        }
+      ]
     },
     {
       "id": "scholar-210",
@@ -7063,12 +7248,17 @@
         "year": "2025"
       },
       "methods": [
-        "Knowledge representation & semantic integration"
+        "Knowledge representation & semantic integration",
+        "Multiscale analysis & visualization"
       ],
       "domains": [
-        "Cancer"
+        "Cancer",
+        "Infection, immunity & clinical outcomes",
+        "Mitochondrial biology & metabolism",
+        "Genetics & congenital disease",
+        "Development & reproduction"
       ],
-      "classification_basis": "Title-based discovery tags with source-supported Cancer tag from reported use cases",
+      "classification_basis": "Title-based discovery tags with source-supported additions",
       "review_flags": [],
       "public_listing": true,
       "format": "Preprint",
@@ -7079,6 +7269,48 @@
           "tag": "Cancer",
           "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12363844/",
           "basis": "Cancer-focused graph analyses in the reported use cases."
+        },
+        {
+          "group": "methods",
+          "tag": "Multiscale analysis & visualization",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12363844/#S6",
+          "scope": "Full text",
+          "basis": "Methods 4–8 demonstrate asthma target/compound queries, metabolite–gene–drug integration, cross-species exercise/heart pathways including mitochondrial processes, CHD variant prioritization, and common-neighbor gene prioritization across CHD and pediatric ALL/AML. These are demonstrated application areas, not merely potential uses."
+        },
+        {
+          "group": "domains",
+          "tag": "Cancer",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12363844/#S6",
+          "scope": "Full text",
+          "basis": "Methods 4–8 demonstrate asthma target/compound queries, metabolite–gene–drug integration, cross-species exercise/heart pathways including mitochondrial processes, CHD variant prioritization, and common-neighbor gene prioritization across CHD and pediatric ALL/AML. These are demonstrated application areas, not merely potential uses."
+        },
+        {
+          "group": "domains",
+          "tag": "Infection, immunity & clinical outcomes",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12363844/#S6",
+          "scope": "Full text",
+          "basis": "Methods 4–8 demonstrate asthma target/compound queries, metabolite–gene–drug integration, cross-species exercise/heart pathways including mitochondrial processes, CHD variant prioritization, and common-neighbor gene prioritization across CHD and pediatric ALL/AML. These are demonstrated application areas, not merely potential uses."
+        },
+        {
+          "group": "domains",
+          "tag": "Mitochondrial biology & metabolism",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12363844/#S6",
+          "scope": "Full text",
+          "basis": "Methods 4–8 demonstrate asthma target/compound queries, metabolite–gene–drug integration, cross-species exercise/heart pathways including mitochondrial processes, CHD variant prioritization, and common-neighbor gene prioritization across CHD and pediatric ALL/AML. These are demonstrated application areas, not merely potential uses."
+        },
+        {
+          "group": "domains",
+          "tag": "Genetics & congenital disease",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12363844/#S6",
+          "scope": "Full text",
+          "basis": "Methods 4–8 demonstrate asthma target/compound queries, metabolite–gene–drug integration, cross-species exercise/heart pathways including mitochondrial processes, CHD variant prioritization, and common-neighbor gene prioritization across CHD and pediatric ALL/AML. These are demonstrated application areas, not merely potential uses."
+        },
+        {
+          "group": "domains",
+          "tag": "Development & reproduction",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12363844/#S6",
+          "scope": "Full text",
+          "basis": "Methods 4–8 demonstrate asthma target/compound queries, metabolite–gene–drug integration, cross-species exercise/heart pathways including mitochondrial processes, CHD variant prioritization, and common-neighbor gene prioritization across CHD and pediatric ALL/AML. These are demonstrated application areas, not merely potential uses."
         }
       ]
     },
@@ -7359,15 +7591,42 @@
         "year": "2026",
         "publisher": "American Society for Clinical Investigation"
       },
-      "methods": [],
-      "domains": [
-        "Infection, immunity & clinical outcomes"
+      "methods": [
+        "Machine learning & statistical methods",
+        "Multiscale analysis & visualization"
       ],
-      "classification_basis": "Title-based discovery tags; full-text classification not reviewed",
+      "domains": [
+        "Infection, immunity & clinical outcomes",
+        "Mitochondrial biology & metabolism"
+      ],
+      "classification_basis": "Title-based discovery tags with source-supported additions",
       "review_flags": [],
       "public_listing": true,
       "format": "Journal record",
-      "links": []
+      "links": [],
+      "classification_evidence": [
+        {
+          "group": "methods",
+          "tag": "Machine learning & statistical methods",
+          "source": "https://europepmc.org/article/MED/42262868",
+          "scope": "Abstract",
+          "basis": "Integrates immune phenotyping, plasma proteomics, single-cell transcriptomics and phosphoflow cytometry; unsupervised cytokine clustering defines subgroups, with T-cell metabolic-stress programs supporting the metabolism tag."
+        },
+        {
+          "group": "methods",
+          "tag": "Multiscale analysis & visualization",
+          "source": "https://europepmc.org/article/MED/42262868",
+          "scope": "Abstract",
+          "basis": "Integrates immune phenotyping, plasma proteomics, single-cell transcriptomics and phosphoflow cytometry; unsupervised cytokine clustering defines subgroups, with T-cell metabolic-stress programs supporting the metabolism tag."
+        },
+        {
+          "group": "domains",
+          "tag": "Mitochondrial biology & metabolism",
+          "source": "https://europepmc.org/article/MED/42262868",
+          "scope": "Abstract",
+          "basis": "Integrates immune phenotyping, plasma proteomics, single-cell transcriptomics and phosphoflow cytometry; unsupervised cytokine clustering defines subgroups, with T-cell metabolic-stress programs supporting the metabolism tag."
+        }
+      ]
     },
     {
       "id": "scholar-224",
@@ -7494,14 +7753,41 @@
       },
       "methods": [
         "Knowledge representation & semantic integration",
-        "Data infrastructure & research software"
+        "Data infrastructure & research software",
+        "Multiscale analysis & visualization"
       ],
-      "domains": [],
-      "classification_basis": "Title-based discovery tags; full-text classification not reviewed",
+      "domains": [
+        "Genetics & congenital disease",
+        "Development & reproduction"
+      ],
+      "classification_basis": "Title-based discovery tags with source-supported additions",
       "review_flags": [],
       "public_listing": true,
       "format": "Preprint",
-      "links": []
+      "links": [],
+      "classification_evidence": [
+        {
+          "group": "methods",
+          "tag": "Multiscale analysis & visualization",
+          "source": "https://europepmc.org/article/PPR/PPR1332943",
+          "scope": "Abstract",
+          "basis": "The current abstract describes executed cross-species phenotype-to-expression, 4DN loop/eQTL overlap, and congenital-heart phenotype/ClinVar/GTEx-heart use cases; these support integrative analysis and developmental/congenital genetics."
+        },
+        {
+          "group": "domains",
+          "tag": "Genetics & congenital disease",
+          "source": "https://europepmc.org/article/PPR/PPR1332943",
+          "scope": "Abstract",
+          "basis": "The current abstract describes executed cross-species phenotype-to-expression, 4DN loop/eQTL overlap, and congenital-heart phenotype/ClinVar/GTEx-heart use cases; these support integrative analysis and developmental/congenital genetics."
+        },
+        {
+          "group": "domains",
+          "tag": "Development & reproduction",
+          "source": "https://europepmc.org/article/PPR/PPR1332943",
+          "scope": "Abstract",
+          "basis": "The current abstract describes executed cross-species phenotype-to-expression, 4DN loop/eQTL overlap, and congenital-heart phenotype/ClinVar/GTEx-heart use cases; these support integrative analysis and developmental/congenital genetics."
+        }
+      ]
     },
     {
       "id": "scholar-228",
@@ -7526,8 +7812,10 @@
       "methods": [
         "Machine learning & statistical methods"
       ],
-      "domains": [],
-      "classification_basis": "Title-based discovery tags; full-text classification not reviewed",
+      "domains": [
+        "Genetics & congenital disease"
+      ],
+      "classification_basis": "Title-based discovery tags with source-supported additions",
       "review_flags": [],
       "public_listing": true,
       "format": "Preprint",
@@ -7535,6 +7823,15 @@
         {
           "label": "Read paper",
           "url": "https://doi.org/10.64898/2026.09.28.754397"
+        }
+      ],
+      "classification_evidence": [
+        {
+          "group": "domains",
+          "tag": "Genetics & congenital disease",
+          "source": "https://europepmc.org/article/PPR/PPR1333536",
+          "scope": "Abstract",
+          "basis": "Evaluates gene–phenotype link prediction on a DDKG projection and a focused DICER1 phenotype-association analysis. This supports genetics/phenotype applications; cancer-specific classification is not inferred merely from DICER1."
         }
       ]
     },
