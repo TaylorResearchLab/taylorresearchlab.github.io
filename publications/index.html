@@ -8,23 +8,25 @@ description: Research across informatics, genetics, molecular biology, medicine 
   <div class="section-intro"><p class="eyebrow">Publications</p><div><h1 id="publications-title">Ideas across disciplines</h1><p>Explore research spanning knowledge representation, machine learning, data infrastructure, developmental biology, clinical research and physical science.</p></div></div>
   <div class="catalog-controls" id="catalog-controls" hidden>
     <label class="catalog-search">Search this research<input id="publication-search" type="search" placeholder="Title, author, journal or topic" autocomplete="off"></label>
-<details class="topic-group" open><summary>Methods & informatics</summary><div class="topic-buttons" role="group" aria-label="Methods & informatics">
-<button class="topic-button" type="button" data-group="methods" data-topic="Knowledge representation &amp; semantic integration" aria-pressed="false">Knowledge representation &amp; semantic integration <span>13</span></button>
-<button class="topic-button" type="button" data-group="methods" data-topic="Machine learning &amp; statistical methods" aria-pressed="false">Machine learning &amp; statistical methods <span>19</span></button>
-<button class="topic-button" type="button" data-group="methods" data-topic="Data infrastructure &amp; research software" aria-pressed="false">Data infrastructure &amp; research software <span>31</span></button>
-<button class="topic-button" type="button" data-group="methods" data-topic="Multiscale analysis &amp; visualization" aria-pressed="false">Multiscale analysis &amp; visualization <span>30</span></button>
-<button class="topic-button" type="button" data-group="methods" data-topic="Measurement, signal processing &amp; physical theory" aria-pressed="false">Measurement, signal processing &amp; physical theory <span>20</span></button>
-</div></details>
-<details class="topic-group" open><summary>Research areas</summary><div class="topic-buttons" role="group" aria-label="Research areas">
-<button class="topic-button" type="button" data-group="domains" data-topic="Development &amp; reproduction" aria-pressed="false">Development &amp; reproduction <span>64</span></button>
-<button class="topic-button" type="button" data-group="domains" data-topic="Genetics &amp; congenital disease" aria-pressed="false">Genetics &amp; congenital disease <span>30</span></button>
-<button class="topic-button" type="button" data-group="domains" data-topic="Cancer" aria-pressed="false">Cancer <span>28</span></button>
-<button class="topic-button" type="button" data-group="domains" data-topic="Infection, immunity &amp; clinical outcomes" aria-pressed="false">Infection, immunity &amp; clinical outcomes <span>41</span></button>
-<button class="topic-button" type="button" data-group="domains" data-topic="Mitochondrial biology &amp; metabolism" aria-pressed="false">Mitochondrial biology &amp; metabolism <span>25</span></button>
-<button class="topic-button" type="button" data-group="domains" data-topic="Molecular &amp; cellular mechanisms" aria-pressed="false">Molecular &amp; cellular mechanisms <span>44</span></button>
-<button class="topic-button" type="button" data-group="domains" data-topic="Physics &amp; biophysics" aria-pressed="false">Physics &amp; biophysics <span>7</span></button>
-</div></details>
-<div class="catalog-reset"><button type="button" id="clear-filters">All publications</button><span>Choose a topic to explore. Combine a method and an area to find their intersection.</span></div></div>
+<div class="catalog-topics">
+<label for="filter-methods">Methods & informatics<select id="filter-methods" data-group="methods" aria-describedby="filter-help"><option value="">All methods</option>
+<option value="Knowledge representation &amp; semantic integration">Knowledge representation &amp; semantic integration (13)</option>
+<option value="Machine learning &amp; statistical methods">Machine learning &amp; statistical methods (19)</option>
+<option value="Data infrastructure &amp; research software">Data infrastructure &amp; research software (31)</option>
+<option value="Multiscale analysis &amp; visualization">Multiscale analysis &amp; visualization (30)</option>
+<option value="Measurement, signal processing &amp; physical theory">Measurement, signal processing &amp; physical theory (20)</option>
+</select></label>
+<label for="filter-domains">Research areas<select id="filter-domains" data-group="domains" aria-describedby="filter-help"><option value="">All research areas</option>
+<option value="Development &amp; reproduction">Development &amp; reproduction (64)</option>
+<option value="Genetics &amp; congenital disease">Genetics &amp; congenital disease (30)</option>
+<option value="Cancer">Cancer (28)</option>
+<option value="Infection, immunity &amp; clinical outcomes">Infection, immunity &amp; clinical outcomes (41)</option>
+<option value="Mitochondrial biology &amp; metabolism">Mitochondrial biology &amp; metabolism (25)</option>
+<option value="Molecular &amp; cellular mechanisms">Molecular &amp; cellular mechanisms (44)</option>
+<option value="Physics &amp; biophysics">Physics &amp; biophysics (7)</option>
+</select></label>
+</div>
+<div class="catalog-reset"><button type="button" id="clear-filters">All publications</button><span id="filter-help">Choose a topic to explore. Combine a method and an area to find their intersection.</span></div></div>
 <p class="catalog-status" id="catalog-status" role="status" aria-live="polite">230 records</p>
 <details class="catalog-note"><summary>About this bibliography</summary><p>Based on a Google Scholar export supplied on November 12, 2026. The list includes journal records, preprints, conference contributions and other research outputs. “Journal record” does not distinguish full articles from abstracts or corrections. Topic tags aid discovery and are based on titles, not a full-text review. Papers can appear in multiple categories.</p><p>Reconciliation with OSF and NIH My Bibliography is pending. Related versions have not been silently merged; repeated-title records are marked for review. Two incomplete-title records are withheld pending correction. Years and citation details are reproduced from the export.</p></details>
 <noscript><p>All records are listed below. Enable JavaScript to search and filter.</p></noscript>
@@ -1412,7 +1414,7 @@ description: Research across informatics, genetics, molecular biology, medicine 
 </div><button type="button" id="show-more" hidden>Show more publications</button><p id="catalog-empty" hidden>No records match these filters. Try a broader search or clear the filters.</p>
 <p class="catalog-footer">Additional source: <a href="https://www.med.upenn.edu/apps/faculty/index.php/g20001121/p8820417">Penn faculty profile</a>.</p>
 </section>
-<script src="{{ '/publications/catalog.js' | relative_url }}" defer></script>
+<script src="{{ '/publications/catalog.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
   <section class="preprint-preview shell" id="preprints" aria-labelledby="preprints-title">
     <div class="preprint-heading"><h2 id="preprints-title">Preprints</h2><p>Early research, not yet peer reviewed.</p></div>
     <ul class="preprint-list">
