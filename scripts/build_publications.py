@@ -1,11 +1,19 @@
 #!/usr/bin/env python3
 """Render an escaped, searchable publication list. No network calls or private notes."""
-import html,json
+import html,json,hashlib,re
 from urllib.parse import quote
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
+def versioned_asset(relative):
+    source=ROOT/relative
+    digest=hashlib.sha256(source.read_bytes()).hexdigest()[:12]
+    target=ROOT/'assets'/f'{source.stem}.{digest}{source.suffix}'
+    target.parent.mkdir(exist_ok=True)
+    target.write_bytes(source.read_bytes())
+    return '/'+target.relative_to(ROOT).as_posix()
 def esc(s):return html.escape(str(s),quote=True)
 def render(data):
+    script_path=versioned_asset('publications/catalog.js')
     records=[r for r in data['records'] if r['public_listing']]
     records.sort(key=lambda r:(-int(r['fields'].get('year','0')),r['fields']['title'].lower()))
     out=['''---
@@ -45,10 +53,12 @@ description: Research across informatics, genetics, molecular biology, medicine 
     out.append('''</div><button type="button" id="show-more" hidden>Show more publications</button><div id="catalog-empty" hidden><p id="catalog-empty-message"></p><div class="catalog-empty-actions"><button type="button" id="clear-search">Clear search</button><button type="button" id="empty-reset">Show all publications</button></div></div>
 <p class="catalog-footer">Additional source: <a href="https://www.med.upenn.edu/apps/faculty/index.php/g20001121/p8820417">Penn faculty profile</a>.</p>
 </section>
-<script src="{{ '/publications/catalog.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+<script src="{{ '__CATALOG_ASSET__' | relative_url }}" defer></script>
 ''')
     # Retain existing compact verified preprint section, consistent with homepage.
     old=(ROOT/'scripts/preprints.html').read_text()
-    return '\n'.join(out)+old
+    return '\n'.join(out).replace('__CATALOG_ASSET__',script_path)+old
 if __name__=='__main__':
+    layout=ROOT/'_layouts/default.html'
+    layout.write_text(re.sub(r'<link rel="stylesheet" href="[^"]+">', '<link rel="stylesheet" href="{{ \"'+versioned_asset('styles.css')+'\" | relative_url }}">', layout.read_text()))
     data=json.loads((ROOT/'data/publications.json').read_text());(ROOT/'publications/index.html').write_text(render(data))

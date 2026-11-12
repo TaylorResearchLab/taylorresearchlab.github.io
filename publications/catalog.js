@@ -2,11 +2,35 @@
   const controls = document.getElementById('catalog-controls');
   if (!controls) return;
   const search = document.getElementById('publication-search');
-  const topic = document.getElementById('publication-topic');
+  let topic = document.getElementById('publication-topic');
   const more = document.getElementById('show-more');
   const records = Array.from(document.querySelectorAll('.catalog-record')).map(el => ({
     el, text: el.textContent.toLocaleLowerCase(), methods: JSON.parse(el.dataset.methods), domains: JSON.parse(el.dataset.domains)
   }));
+  // Cached pages may still contain the previous two-selector controls.
+  // Upgrade those controls before binding events to the current interface.
+  if (!topic) {
+    const container = controls.querySelector('.catalog-topics');
+    if (!container) return;
+    const label = document.createElement('label');
+    label.htmlFor = 'publication-topic';
+    label.textContent = 'Browse by topic';
+    topic = document.createElement('select');
+    topic.id = 'publication-topic';
+    topic.setAttribute('aria-describedby', 'filter-help');
+    const categories = [...new Set(records.flatMap(r => [...r.methods, ...r.domains]))].sort((a, b) => a.localeCompare(b));
+    ['', ...categories].forEach(value => {
+      const option = document.createElement('option');
+      option.value = value;
+      option.textContent = value || 'All publications';
+      topic.append(option);
+    });
+    label.append(topic);
+    container.replaceChildren(label);
+    document.getElementById('filter-help').textContent = 'Choose any topic to explore, or search within it. Papers can appear under multiple topics. Results are newest first.';
+  }
+  if (controls.dataset.initialized) return;
+  controls.dataset.initialized = 'true';
   let selected = '';
   let limit = 20;
   const apply = () => {

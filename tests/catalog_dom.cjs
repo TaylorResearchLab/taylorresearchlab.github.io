@@ -18,3 +18,15 @@ click('#clear-search');assert.equal(search.value,'');assert.equal(topic.value,'M
 query('no-such-paper-xyz');click('#empty-reset');assert.equal(topic.value,'');assert.equal(search.value,'');assert.equal(visible().length,20);
 choose('Knowledge representation & semantic integration');assert(visible().some(r=>r.id==='scholar-063'));assert(!d.getElementById('scholar-167'));click('#clear-filters');
 console.log('PASS all 13 independent topics and counts, multi-tag discovery, clinical 18, newest-first, search, recovery, pagination, withheld citation');
+// A cached two-menu page receiving the compatibility script must remain usable.
+const legacyHTML=fs.readFileSync(path.join(root,'publications/index.html'),'utf8').replace(/<div class="catalog-topics">[\s\S]*?<\/div>/, '<div class="catalog-topics"><label>Methods<select id="filter-methods"><option value="">All methods</option></select></label><label>Areas<select id="filter-domains"><option value="">All areas</option></select></label></div>');
+const legacy=new JSDOM(legacyHTML,{runScripts:'outside-only'});
+const lw=legacy.window,ld=lw.document;
+lw.eval(fs.readFileSync(path.join(root,'publications/catalog.js'),'utf8'));
+assert.equal(ld.querySelectorAll('.catalog-topics select').length,1);
+const lt=ld.getElementById('publication-topic');lt.value='Cancer';lt.dispatchEvent(new lw.Event('change'));
+assert(ld.getElementById('catalog-status').textContent.startsWith('30 matching'));
+ld.getElementById('publication-search').value='medulloblastoma';ld.getElementById('publication-search').dispatchEvent(new lw.Event('input'));
+assert(!ld.getElementById('scholar-129').hidden);
+ld.getElementById('clear-filters').click();assert(ld.getElementById('catalog-status').textContent.startsWith('230 matching'));
+console.log('PASS cached two-menu HTML upgraded, search, topic, reset');
