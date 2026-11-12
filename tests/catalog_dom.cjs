@@ -26,18 +26,22 @@ for(const m of Array.from(method.options).slice(1).map(o=>o.value)){
     if(!expected)unavailable++;
   }
 }
-assert.equal(unavailable,8);
+assert.equal(unavailable,7);
 click('#clear-filters');choose('domains','Mitochondrial biology & metabolism');choose('methods','Machine learning & statistical methods');
 search.value='no-such-paper-xyz';search.dispatchEvent(new w.Event('input'));
 assert(!method.selectedOptions[0].disabled);assert(!area.selectedOptions[0].disabled);assert(!method.options[0].disabled);
-click('#clear-search');assert.equal(search.value,'');assert.equal(visible().length,5);assert.equal(area.value,'Mitochondrial biology & metabolism');
+click('#clear-search');assert.equal(search.value,'');assert.equal(visible().length,6);assert.equal(area.value,'Mitochondrial biology & metabolism');
 search.value='no-such-paper-xyz';search.dispatchEvent(new w.Event('input'));click('#empty-reset');assert.equal(visible().length,20);assert.equal(method.value,'');assert.equal(area.value,'');
 // Defensive recovery if a stale UI or script supplies a now-unavailable pair.
 choose('methods','Knowledge representation & semantic integration');choose('domains','Physics & biophysics');assert.equal(visible().length,0);assert(d.getElementById('catalog-empty-message').textContent.includes('provisional'));click('#empty-reset');
-console.log('PASS all 35 pair counts, 8 unavailable pairs, selected/All recovery, clear-search and empty-state reset');
+console.log('PASS all 35 pair counts, 7 unavailable pairs, selected/All recovery, clear-search and empty-state reset');
 
 click('#clear-filters');choose('methods','Knowledge representation & semantic integration');
 assert.equal(Array.from(area.options).find(o=>o.value==='Cancer').disabled,false);
 choose('domains','Cancer');assert.equal(visible().length,2);
 assert.deepEqual(visible().map(r=>r.id).sort(),['scholar-168','scholar-214']);
 console.log('PASS knowledge representation × cancer regression: Petagraph and Data Distillery');
+click('#clear-filters');choose('methods','Knowledge representation & semantic integration');choose('domains','Development & reproduction');assert(visible().some(r=>r.id==='scholar-063'));
+click('#clear-filters');choose('methods','Measurement, signal processing & physical theory');choose('domains','Genetics & congenital disease');assert.equal(visible().length,2);assert.deepEqual(visible().map(r=>r.id).sort(),['scholar-043','scholar-057']);
+assert(!d.getElementById('scholar-167'));
+console.log('PASS reproduction tags, diagnostic-genetics intersection, malformed citation withheld');

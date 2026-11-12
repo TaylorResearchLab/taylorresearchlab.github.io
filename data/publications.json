@@ -66,13 +66,28 @@
       },
       "methods": [],
       "domains": [
-        "Molecular & cellular mechanisms"
+        "Molecular & cellular mechanisms",
+        "Development & reproduction"
       ],
-      "classification_basis": "Title-based discovery tags; full-text classification not reviewed",
+      "classification_basis": "Title-based discovery tags with source-supported additions",
       "review_flags": [],
       "public_listing": true,
       "format": "Journal record",
-      "links": []
+      "links": [],
+      "classification_evidence": [
+        {
+          "group": "domains",
+          "tag": "Molecular & cellular mechanisms",
+          "basis": "Reproductive-research scope supported by the bibliographic venue: Molecular human reproduction.",
+          "source": "https://europepmc.org/article/MED/16051677"
+        },
+        {
+          "group": "domains",
+          "tag": "Development & reproduction",
+          "basis": "Reproductive-research scope supported by the bibliographic venue: Molecular human reproduction.",
+          "source": "https://europepmc.org/article/MED/16051677"
+        }
+      ]
     },
     {
       "id": "scholar-004",
@@ -372,16 +387,39 @@
         "year": "2011",
         "publisher": "Public Library of Science, San Francisco, USA"
       },
-      "methods": [],
+      "methods": [
+        "Machine learning & statistical methods",
+        "Measurement, signal processing & physical theory"
+      ],
       "domains": [
         "Development & reproduction",
         "Molecular & cellular mechanisms"
       ],
-      "classification_basis": "Title-based discovery tags; full-text classification not reviewed",
+      "classification_basis": "Title-based discovery tags with source-supported additions",
       "review_flags": [],
       "public_listing": true,
       "format": "Journal record",
-      "links": []
+      "links": [],
+      "classification_evidence": [
+        {
+          "group": "methods",
+          "tag": "Machine learning & statistical methods",
+          "basis": "Develops parallel telomere-DNA quantification and 24-chromosome screening from the same biopsy, with sibling/stage comparisons and reported statistical tests. Supports measurement development and statistical analysis in embryo research.",
+          "source": "https://europepmc.org/article/MED/21738493"
+        },
+        {
+          "group": "methods",
+          "tag": "Measurement, signal processing & physical theory",
+          "basis": "Develops parallel telomere-DNA quantification and 24-chromosome screening from the same biopsy, with sibling/stage comparisons and reported statistical tests. Supports measurement development and statistical analysis in embryo research.",
+          "source": "https://europepmc.org/article/MED/21738493"
+        },
+        {
+          "group": "domains",
+          "tag": "Development & reproduction",
+          "basis": "Develops parallel telomere-DNA quantification and 24-chromosome screening from the same biopsy, with sibling/stage comparisons and reported statistical tests. Supports measurement development and statistical analysis in embryo research.",
+          "source": "https://europepmc.org/article/MED/21738493"
+        }
+      ]
     },
     {
       "id": "scholar-013",
@@ -646,12 +684,22 @@
         "publisher": "Elsevier"
       },
       "methods": [],
-      "domains": [],
-      "classification_basis": "Title-based discovery tags; full-text classification not reviewed",
+      "domains": [
+        "Development & reproduction"
+      ],
+      "classification_basis": "Title-based discovery tags with source-supported additions",
       "review_flags": [],
       "public_listing": true,
       "format": "Journal record",
-      "links": []
+      "links": [],
+      "classification_evidence": [
+        {
+          "group": "domains",
+          "tag": "Development & reproduction",
+          "basis": "Reproductive-research scope supported by the bibliographic venue: Fertility and Sterility.",
+          "scope": "Bibliographic venue"
+        }
+      ]
     },
     {
       "id": "scholar-021",
@@ -1118,15 +1166,31 @@
         "year": "2012",
         "publisher": "doi: 10.1093/humrep/des020"
       },
-      "methods": [],
+      "methods": [
+        "Machine learning & statistical methods"
+      ],
       "domains": [
         "Development & reproduction"
       ],
-      "classification_basis": "Title-based discovery tags; full-text classification not reviewed",
+      "classification_basis": "Title-based discovery tags with source-supported additions",
       "review_flags": [],
       "public_listing": true,
       "format": "Journal record",
-      "links": []
+      "links": [],
+      "classification_evidence": [
+        {
+          "group": "methods",
+          "tag": "Machine learning & statistical methods",
+          "basis": "Retrospective overall and age-controlled pregnancy-rate comparison of screened and unscreened single-embryo transfers. Clinical screening/outcome evaluation supports statistical methods.",
+          "source": "https://europepmc.org/article/MED/22343551"
+        },
+        {
+          "group": "domains",
+          "tag": "Development & reproduction",
+          "basis": "Retrospective overall and age-controlled pregnancy-rate comparison of screened and unscreened single-embryo transfers. Clinical screening/outcome evaluation supports statistical methods.",
+          "source": "https://europepmc.org/article/MED/22343551"
+        }
+      ]
     },
     {
       "id": "scholar-035",
@@ -1147,17 +1211,38 @@
         "publisher": "Elsevier"
       },
       "methods": [
-        "Measurement, signal processing & physical theory"
+        "Measurement, signal processing & physical theory",
+        "Machine learning & statistical methods"
       ],
       "domains": [
         "Development & reproduction",
         "Molecular & cellular mechanisms"
       ],
-      "classification_basis": "Title-based discovery tags; full-text classification not reviewed",
+      "classification_basis": "Title-based discovery tags with source-supported additions",
       "review_flags": [],
       "public_listing": true,
       "format": "Journal record",
-      "links": []
+      "links": [],
+      "classification_evidence": [
+        {
+          "group": "methods",
+          "tag": "Measurement, signal processing & physical theory",
+          "basis": "Prospective randomized/blinded diagnostic validation compares qPCR calls with karyotype/microarray reference results and applies concurrence thresholds. Adds statistical validation, retaining measurement methods.",
+          "source": "https://europepmc.org/article/MED/22342859"
+        },
+        {
+          "group": "methods",
+          "tag": "Machine learning & statistical methods",
+          "basis": "Prospective randomized/blinded diagnostic validation compares qPCR calls with karyotype/microarray reference results and applies concurrence thresholds. Adds statistical validation, retaining measurement methods.",
+          "source": "https://europepmc.org/article/MED/22342859"
+        },
+        {
+          "group": "domains",
+          "tag": "Development & reproduction",
+          "basis": "Prospective randomized/blinded diagnostic validation compares qPCR calls with karyotype/microarray reference results and applies concurrence thresholds. Adds statistical validation, retaining measurement methods.",
+          "source": "https://europepmc.org/article/MED/22342859"
+        }
+      ]
     },
     {
       "id": "scholar-036",
@@ -1422,15 +1507,45 @@
         "year": "2013",
         "publisher": "Elsevier"
       },
-      "methods": [],
-      "domains": [
-        "Development & reproduction"
+      "methods": [
+        "Measurement, signal processing & physical theory",
+        "Machine learning & statistical methods"
       ],
-      "classification_basis": "Title-based discovery tags; full-text classification not reviewed",
+      "domains": [
+        "Development & reproduction",
+        "Genetics & congenital disease"
+      ],
+      "classification_basis": "Title-based discovery tags with source-supported additions",
       "review_flags": [],
       "public_listing": true,
       "format": "Journal record",
-      "links": []
+      "links": [],
+      "classification_evidence": [
+        {
+          "group": "methods",
+          "tag": "Measurement, signal processing & physical theory",
+          "basis": "Blinded NGS preimplantation diagnosis study compares embryonic-genotype calls against two independent methods in couples at risk of single-gene disorders. Supports diagnostic/statistical validation and genetics.",
+          "source": "https://europepmc.org/article/MED/23312231"
+        },
+        {
+          "group": "methods",
+          "tag": "Machine learning & statistical methods",
+          "basis": "Blinded NGS preimplantation diagnosis study compares embryonic-genotype calls against two independent methods in couples at risk of single-gene disorders. Supports diagnostic/statistical validation and genetics.",
+          "source": "https://europepmc.org/article/MED/23312231"
+        },
+        {
+          "group": "domains",
+          "tag": "Development & reproduction",
+          "basis": "Blinded NGS preimplantation diagnosis study compares embryonic-genotype calls against two independent methods in couples at risk of single-gene disorders. Supports diagnostic/statistical validation and genetics.",
+          "source": "https://europepmc.org/article/MED/23312231"
+        },
+        {
+          "group": "domains",
+          "tag": "Genetics & congenital disease",
+          "basis": "Blinded NGS preimplantation diagnosis study compares embryonic-genotype calls against two independent methods in couples at risk of single-gene disorders. Supports diagnostic/statistical validation and genetics.",
+          "source": "https://europepmc.org/article/MED/23312231"
+        }
+      ]
     },
     {
       "id": "scholar-044",
@@ -1456,15 +1571,31 @@
         "year": "2013",
         "publisher": "Elsevier"
       },
-      "methods": [],
+      "methods": [
+        "Machine learning & statistical methods"
+      ],
       "domains": [
         "Development & reproduction"
       ],
-      "classification_basis": "Title-based discovery tags; full-text classification not reviewed",
+      "classification_basis": "Title-based discovery tags with source-supported additions",
       "review_flags": [],
       "public_listing": true,
       "format": "Journal record",
-      "links": []
+      "links": [],
+      "classification_evidence": [
+        {
+          "group": "methods",
+          "tag": "Machine learning & statistical methods",
+          "basis": "Randomized noninferiority trial compares single euploid transfer with two untested blastocysts, reporting relative risks, confidence intervals and a prespecified noninferiority margin.",
+          "source": "https://europepmc.org/article/MED/23548942"
+        },
+        {
+          "group": "domains",
+          "tag": "Development & reproduction",
+          "basis": "Randomized noninferiority trial compares single euploid transfer with two untested blastocysts, reporting relative risks, confidence intervals and a prespecified noninferiority margin.",
+          "source": "https://europepmc.org/article/MED/23548942"
+        }
+      ]
     },
     {
       "id": "scholar-045",
@@ -1551,15 +1682,31 @@
         "year": "2013",
         "publisher": "Elsevier"
       },
-      "methods": [],
+      "methods": [
+        "Machine learning & statistical methods"
+      ],
       "domains": [
         "Development & reproduction"
       ],
-      "classification_basis": "Title-based discovery tags; full-text classification not reviewed",
+      "classification_basis": "Title-based discovery tags with source-supported additions",
       "review_flags": [],
       "public_listing": true,
       "format": "Journal record",
-      "links": []
+      "links": [],
+      "classification_evidence": [
+        {
+          "group": "methods",
+          "tag": "Machine learning & statistical methods",
+          "basis": "Randomized controlled comparison of qPCR-based chromosome screening versus routine IVF care evaluates sustained implantation and delivery rates.",
+          "source": "https://europepmc.org/article/MED/23731996"
+        },
+        {
+          "group": "domains",
+          "tag": "Development & reproduction",
+          "basis": "Randomized controlled comparison of qPCR-based chromosome screening versus routine IVF care evaluates sustained implantation and delivery rates.",
+          "source": "https://europepmc.org/article/MED/23731996"
+        }
+      ]
     },
     {
       "id": "scholar-048",
@@ -1661,12 +1808,22 @@
       "methods": [
         "Measurement, signal processing & physical theory"
       ],
-      "domains": [],
-      "classification_basis": "Title-based discovery tags; full-text classification not reviewed",
+      "domains": [
+        "Development & reproduction"
+      ],
+      "classification_basis": "Title-based discovery tags with source-supported additions",
       "review_flags": [],
       "public_listing": true,
       "format": "Journal record",
-      "links": []
+      "links": [],
+      "classification_evidence": [
+        {
+          "group": "domains",
+          "tag": "Development & reproduction",
+          "basis": "Reproductive-research scope supported by the bibliographic venue: Fertility and Sterility.",
+          "scope": "Bibliographic venue"
+        }
+      ]
     },
     {
       "id": "scholar-051",
@@ -1794,15 +1951,45 @@
         "year": "2014",
         "publisher": "Elsevier"
       },
-      "methods": [],
-      "domains": [
-        "Development & reproduction"
+      "methods": [
+        "Machine learning & statistical methods",
+        "Measurement, signal processing & physical theory"
       ],
-      "classification_basis": "Title-based discovery tags; full-text classification not reviewed",
+      "domains": [
+        "Development & reproduction",
+        "Molecular & cellular mechanisms"
+      ],
+      "classification_basis": "Title-based discovery tags with source-supported additions",
       "review_flags": [],
       "public_listing": true,
       "format": "Journal record",
-      "links": []
+      "links": [],
+      "classification_evidence": [
+        {
+          "group": "methods",
+          "tag": "Machine learning & statistical methods",
+          "basis": "Validates SNP-array UPD detection from limited-cell biopsies using defined thresholds and estimates frequency in 3,401 blastocysts; supports diagnostic measurement development and statistical analysis.",
+          "source": "https://europepmc.org/article/MED/24083874"
+        },
+        {
+          "group": "methods",
+          "tag": "Measurement, signal processing & physical theory",
+          "basis": "Validates SNP-array UPD detection from limited-cell biopsies using defined thresholds and estimates frequency in 3,401 blastocysts; supports diagnostic measurement development and statistical analysis.",
+          "source": "https://europepmc.org/article/MED/24083874"
+        },
+        {
+          "group": "domains",
+          "tag": "Development & reproduction",
+          "basis": "Validates SNP-array UPD detection from limited-cell biopsies using defined thresholds and estimates frequency in 3,401 blastocysts; supports diagnostic measurement development and statistical analysis.",
+          "source": "https://europepmc.org/article/MED/24083874"
+        },
+        {
+          "group": "domains",
+          "tag": "Molecular & cellular mechanisms",
+          "basis": "Validates SNP-array UPD detection from limited-cell biopsies using defined thresholds and estimates frequency in 3,401 blastocysts; supports diagnostic measurement development and statistical analysis.",
+          "source": "https://europepmc.org/article/MED/24083874"
+        }
+      ]
     },
     {
       "id": "scholar-055",
@@ -1862,15 +2049,31 @@
         "year": "2014",
         "publisher": "Springer US, Boston"
       },
-      "methods": [],
+      "methods": [
+        "Machine learning & statistical methods"
+      ],
       "domains": [
         "Development & reproduction"
       ],
-      "classification_basis": "Title-based discovery tags; full-text classification not reviewed",
+      "classification_basis": "Title-based discovery tags with source-supported additions",
       "review_flags": [],
       "public_listing": true,
       "format": "Journal record",
-      "links": []
+      "links": [],
+      "classification_evidence": [
+        {
+          "group": "methods",
+          "tag": "Machine learning & statistical methods",
+          "basis": "Case-control genetic association study uses SNP tagging and targeted NGS, tests variants under genetic models and evaluates statistical significance for azoospermia.",
+          "source": "https://europepmc.org/article/MED/24913027"
+        },
+        {
+          "group": "domains",
+          "tag": "Development & reproduction",
+          "basis": "Case-control genetic association study uses SNP tagging and targeted NGS, tests variants under genetic models and evaluates statistical significance for azoospermia.",
+          "source": "https://europepmc.org/article/MED/24913027"
+        }
+      ]
     },
     {
       "id": "scholar-057",
@@ -1899,12 +2102,35 @@
       "methods": [
         "Measurement, signal processing & physical theory"
       ],
-      "domains": [],
-      "classification_basis": "Title-based discovery tags; full-text classification not reviewed",
+      "domains": [
+        "Development & reproduction",
+        "Genetics & congenital disease"
+      ],
+      "classification_basis": "Title-based discovery tags with source-supported additions",
       "review_flags": [],
       "public_listing": true,
       "format": "Journal record",
-      "links": []
+      "links": [],
+      "classification_evidence": [
+        {
+          "group": "methods",
+          "tag": "Measurement, signal processing & physical theory",
+          "basis": "The identified paper specifically concerns qPCR-based preimplantation diagnosis of Dyskeratosis Congenita; adds genetics/congenital disease. No new statistical or ontology claim without abstract/full-text review.",
+          "source": "https://europepmc.org/article/MED/25099625"
+        },
+        {
+          "group": "domains",
+          "tag": "Development & reproduction",
+          "basis": "The identified paper specifically concerns qPCR-based preimplantation diagnosis of Dyskeratosis Congenita; adds genetics/congenital disease. No new statistical or ontology claim without abstract/full-text review.",
+          "source": "https://europepmc.org/article/MED/25099625"
+        },
+        {
+          "group": "domains",
+          "tag": "Genetics & congenital disease",
+          "basis": "The identified paper specifically concerns qPCR-based preimplantation diagnosis of Dyskeratosis Congenita; adds genetics/congenital disease. No new statistical or ontology claim without abstract/full-text review.",
+          "source": "https://europepmc.org/article/MED/25099625"
+        }
+      ]
     },
     {
       "id": "scholar-058",
@@ -1931,16 +2157,37 @@
         "publisher": "Springer US, Boston"
       },
       "methods": [
-        "Measurement, signal processing & physical theory"
+        "Measurement, signal processing & physical theory",
+        "Machine learning & statistical methods"
       ],
       "domains": [
         "Development & reproduction"
       ],
-      "classification_basis": "Title-based discovery tags; full-text classification not reviewed",
+      "classification_basis": "Title-based discovery tags with source-supported additions",
       "review_flags": [],
       "public_listing": true,
       "format": "Journal record",
-      "links": []
+      "links": [],
+      "classification_evidence": [
+        {
+          "group": "methods",
+          "tag": "Measurement, signal processing & physical theory",
+          "basis": "Prospective blinded DNA-fingerprint validation uses SNP similarity distributions and relationship classification to distinguish sibling embryos.",
+          "source": "https://europepmc.org/article/MED/25129376"
+        },
+        {
+          "group": "methods",
+          "tag": "Machine learning & statistical methods",
+          "basis": "Prospective blinded DNA-fingerprint validation uses SNP similarity distributions and relationship classification to distinguish sibling embryos.",
+          "source": "https://europepmc.org/article/MED/25129376"
+        },
+        {
+          "group": "domains",
+          "tag": "Development & reproduction",
+          "basis": "Prospective blinded DNA-fingerprint validation uses SNP similarity distributions and relationship classification to distinguish sibling embryos.",
+          "source": "https://europepmc.org/article/MED/25129376"
+        }
+      ]
     },
     {
       "id": "scholar-059",
@@ -1998,15 +2245,31 @@
         "year": "2014",
         "publisher": "Elsevier"
       },
-      "methods": [],
+      "methods": [
+        "Machine learning & statistical methods"
+      ],
       "domains": [
         "Development & reproduction"
       ],
-      "classification_basis": "Title-based discovery tags; full-text classification not reviewed",
+      "classification_basis": "Title-based discovery tags with source-supported additions",
       "review_flags": [],
       "public_listing": true,
       "format": "Journal record",
-      "links": []
+      "links": [],
+      "classification_evidence": [
+        {
+          "group": "methods",
+          "tag": "Machine learning & statistical methods",
+          "basis": "Multicenter retrospective diagnostic-performance study estimates clinically recognizable CCS error rates per embryo, transfer and ongoing pregnancy, with confidence intervals.",
+          "source": "https://europepmc.org/article/MED/25439802"
+        },
+        {
+          "group": "domains",
+          "tag": "Development & reproduction",
+          "basis": "Multicenter retrospective diagnostic-performance study estimates clinically recognizable CCS error rates per embryo, transfer and ongoing pregnancy, with confidence intervals.",
+          "source": "https://europepmc.org/article/MED/25439802"
+        }
+      ]
     },
     {
       "id": "scholar-061",
@@ -2101,17 +2364,58 @@
         "publisher": "Public Library of Science, San Francisco, CA USA"
       },
       "methods": [
-        "Multiscale analysis & visualization"
+        "Multiscale analysis & visualization",
+        "Machine learning & statistical methods",
+        "Knowledge representation & semantic integration"
       ],
       "domains": [
         "Development & reproduction",
-        "Molecular & cellular mechanisms"
+        "Molecular & cellular mechanisms",
+        "Mitochondrial biology & metabolism"
       ],
-      "classification_basis": "Title-based discovery tags; full-text classification not reviewed",
+      "classification_basis": "Title-based discovery tags with source-supported additions",
       "review_flags": [],
       "public_listing": true,
       "format": "Journal record",
-      "links": []
+      "links": [],
+      "classification_evidence": [
+        {
+          "group": "methods",
+          "tag": "Machine learning & statistical methods",
+          "basis": "Hasegawa et al. with Jessica C. Mar develops variability statistics, Normal mixture models and Levene/ANOVA comparisons; integrates seven curated gene catalogs (including OMIM/GWAS), IPA and MSigDB; compares human and mouse single-cell embryonic stages and validates HDDC2 function. Sections sec007/sec013/sec019 support knowledge-based interpretation (not creation of a new ontology); sec011 reports oxidative-phosphorylation/glycolytic pathway enrichment, supporting metabolism. Existing statistical and developmental/molecular tags retained.",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4546122/"
+        },
+        {
+          "group": "methods",
+          "tag": "Knowledge representation & semantic integration",
+          "basis": "Hasegawa et al. with Jessica C. Mar develops variability statistics, Normal mixture models and Levene/ANOVA comparisons; integrates seven curated gene catalogs (including OMIM/GWAS), IPA and MSigDB; compares human and mouse single-cell embryonic stages and validates HDDC2 function. Sections sec007/sec013/sec019 support knowledge-based interpretation (not creation of a new ontology); sec011 reports oxidative-phosphorylation/glycolytic pathway enrichment, supporting metabolism. Existing statistical and developmental/molecular tags retained.",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4546122/"
+        },
+        {
+          "group": "methods",
+          "tag": "Multiscale analysis & visualization",
+          "basis": "Hasegawa et al. with Jessica C. Mar develops variability statistics, Normal mixture models and Levene/ANOVA comparisons; integrates seven curated gene catalogs (including OMIM/GWAS), IPA and MSigDB; compares human and mouse single-cell embryonic stages and validates HDDC2 function. Sections sec007/sec013/sec019 support knowledge-based interpretation (not creation of a new ontology); sec011 reports oxidative-phosphorylation/glycolytic pathway enrichment, supporting metabolism. Existing statistical and developmental/molecular tags retained.",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4546122/"
+        },
+        {
+          "group": "domains",
+          "tag": "Development & reproduction",
+          "basis": "Hasegawa et al. with Jessica C. Mar develops variability statistics, Normal mixture models and Levene/ANOVA comparisons; integrates seven curated gene catalogs (including OMIM/GWAS), IPA and MSigDB; compares human and mouse single-cell embryonic stages and validates HDDC2 function. Sections sec007/sec013/sec019 support knowledge-based interpretation (not creation of a new ontology); sec011 reports oxidative-phosphorylation/glycolytic pathway enrichment, supporting metabolism. Existing statistical and developmental/molecular tags retained.",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4546122/"
+        },
+        {
+          "group": "domains",
+          "tag": "Molecular & cellular mechanisms",
+          "basis": "Hasegawa et al. with Jessica C. Mar develops variability statistics, Normal mixture models and Levene/ANOVA comparisons; integrates seven curated gene catalogs (including OMIM/GWAS), IPA and MSigDB; compares human and mouse single-cell embryonic stages and validates HDDC2 function. Sections sec007/sec013/sec019 support knowledge-based interpretation (not creation of a new ontology); sec011 reports oxidative-phosphorylation/glycolytic pathway enrichment, supporting metabolism. Existing statistical and developmental/molecular tags retained.",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4546122/"
+        },
+        {
+          "group": "domains",
+          "tag": "Mitochondrial biology & metabolism",
+          "basis": "Hasegawa et al. with Jessica C. Mar develops variability statistics, Normal mixture models and Levene/ANOVA comparisons; integrates seven curated gene catalogs (including OMIM/GWAS), IPA and MSigDB; compares human and mouse single-cell embryonic stages and validates HDDC2 function. Sections sec007/sec013/sec019 support knowledge-based interpretation (not creation of a new ontology); sec011 reports oxidative-phosphorylation/glycolytic pathway enrichment, supporting metabolism. Existing statistical and developmental/molecular tags retained.",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4546122/"
+        }
+      ]
     },
     {
       "id": "scholar-064",
@@ -2233,15 +2537,38 @@
         "year": "2016",
         "publisher": "Society for the Study of Reproduction, Inc."
       },
-      "methods": [],
-      "domains": [
-        "Development & reproduction"
+      "methods": [
+        "Measurement, signal processing & physical theory"
       ],
-      "classification_basis": "Title-based discovery tags; full-text classification not reviewed",
+      "domains": [
+        "Development & reproduction",
+        "Mitochondrial biology & metabolism"
+      ],
+      "classification_basis": "Title-based discovery tags with source-supported additions",
       "review_flags": [],
       "public_listing": true,
       "format": "Journal record",
-      "links": []
+      "links": [],
+      "classification_evidence": [
+        {
+          "group": "methods",
+          "tag": "Measurement, signal processing & physical theory",
+          "basis": "The validated low-pass genome-sequencing embryo assay explicitly quantifies mitochondrial DNA segregation alongside meiotic/mitotic chromosome errors; adds mitochondrial/metabolic application, retaining measurement methods.",
+          "source": "https://europepmc.org/article/MED/26911429"
+        },
+        {
+          "group": "domains",
+          "tag": "Development & reproduction",
+          "basis": "The validated low-pass genome-sequencing embryo assay explicitly quantifies mitochondrial DNA segregation alongside meiotic/mitotic chromosome errors; adds mitochondrial/metabolic application, retaining measurement methods.",
+          "source": "https://europepmc.org/article/MED/26911429"
+        },
+        {
+          "group": "domains",
+          "tag": "Mitochondrial biology & metabolism",
+          "basis": "The validated low-pass genome-sequencing embryo assay explicitly quantifies mitochondrial DNA segregation alongside meiotic/mitotic chromosome errors; adds mitochondrial/metabolic application, retaining measurement methods.",
+          "source": "https://europepmc.org/article/MED/26911429"
+        }
+      ]
     },
     {
       "id": "scholar-068",
@@ -2335,15 +2662,38 @@
         "year": "2016",
         "publisher": "Elsevier"
       },
-      "methods": [],
-      "domains": [
-        "Development & reproduction"
+      "methods": [
+        "Machine learning & statistical methods"
       ],
-      "classification_basis": "Title-based discovery tags; full-text classification not reviewed",
+      "domains": [
+        "Development & reproduction",
+        "Molecular & cellular mechanisms"
+      ],
+      "classification_basis": "Title-based discovery tags with source-supported additions",
       "review_flags": [],
       "public_listing": true,
       "format": "Journal record",
-      "links": []
+      "links": [],
+      "classification_evidence": [
+        {
+          "group": "methods",
+          "tag": "Machine learning & statistical methods",
+          "basis": "Case-control genetics study uses SNP-array-guided exome analysis, FDR adjustment, chi-square, Mann–Whitney and t tests with odds ratios/confidence intervals.",
+          "source": "https://europepmc.org/article/MED/26944198"
+        },
+        {
+          "group": "domains",
+          "tag": "Development & reproduction",
+          "basis": "Case-control genetics study uses SNP-array-guided exome analysis, FDR adjustment, chi-square, Mann–Whitney and t tests with odds ratios/confidence intervals.",
+          "source": "https://europepmc.org/article/MED/26944198"
+        },
+        {
+          "group": "domains",
+          "tag": "Molecular & cellular mechanisms",
+          "basis": "Case-control genetics study uses SNP-array-guided exome analysis, FDR adjustment, chi-square, Mann–Whitney and t tests with odds ratios/confidence intervals.",
+          "source": "https://europepmc.org/article/MED/26944198"
+        }
+      ]
     },
     {
       "id": "scholar-071",
@@ -2684,15 +3034,38 @@
         "year": "2017",
         "publisher": "Oxford University Press"
       },
-      "methods": [],
+      "methods": [
+        "Machine learning & statistical methods",
+        "Multiscale analysis & visualization"
+      ],
       "domains": [
         "Development & reproduction"
       ],
-      "classification_basis": "Title-based discovery tags; full-text classification not reviewed",
+      "classification_basis": "Title-based discovery tags with source-supported additions",
       "review_flags": [],
       "public_listing": true,
       "format": "Journal record",
-      "links": []
+      "links": [],
+      "classification_evidence": [
+        {
+          "group": "methods",
+          "tag": "Machine learning & statistical methods",
+          "basis": "Extreme-phenotype sample selection links NGS variant discovery in patients with functional mouse-oocyte assays, protein localization and catalytic activity; supports statistical study design and multiscale integration.",
+          "source": "https://europepmc.org/article/MED/28369513"
+        },
+        {
+          "group": "methods",
+          "tag": "Multiscale analysis & visualization",
+          "basis": "Extreme-phenotype sample selection links NGS variant discovery in patients with functional mouse-oocyte assays, protein localization and catalytic activity; supports statistical study design and multiscale integration.",
+          "source": "https://europepmc.org/article/MED/28369513"
+        },
+        {
+          "group": "domains",
+          "tag": "Development & reproduction",
+          "basis": "Extreme-phenotype sample selection links NGS variant discovery in patients with functional mouse-oocyte assays, protein localization and catalytic activity; supports statistical study design and multiscale integration.",
+          "source": "https://europepmc.org/article/MED/28369513"
+        }
+      ]
     },
     {
       "id": "scholar-082",
@@ -2848,16 +3221,44 @@
         "publisher": "Oxford University Press"
       },
       "methods": [
-        "Measurement, signal processing & physical theory"
+        "Measurement, signal processing & physical theory",
+        "Machine learning & statistical methods",
+        "Data infrastructure & research software"
       ],
       "domains": [
         "Development & reproduction"
       ],
-      "classification_basis": "Title-based discovery tags; full-text classification not reviewed",
+      "classification_basis": "Title-based discovery tags with source-supported additions",
       "review_flags": [],
       "public_listing": true,
       "format": "Journal record",
-      "links": []
+      "links": [],
+      "classification_evidence": [
+        {
+          "group": "methods",
+          "tag": "Measurement, signal processing & physical theory",
+          "basis": "Preclinical tNGS chromosome-screening validation uses a custom bioinformatics pipeline for karyotype determination and compares diagnostic consistency with reference platforms. Adds software/data processing and statistical validation, retaining measurement methods.",
+          "source": "https://europepmc.org/article/MED/29186554"
+        },
+        {
+          "group": "methods",
+          "tag": "Machine learning & statistical methods",
+          "basis": "Preclinical tNGS chromosome-screening validation uses a custom bioinformatics pipeline for karyotype determination and compares diagnostic consistency with reference platforms. Adds software/data processing and statistical validation, retaining measurement methods.",
+          "source": "https://europepmc.org/article/MED/29186554"
+        },
+        {
+          "group": "methods",
+          "tag": "Data infrastructure & research software",
+          "basis": "Preclinical tNGS chromosome-screening validation uses a custom bioinformatics pipeline for karyotype determination and compares diagnostic consistency with reference platforms. Adds software/data processing and statistical validation, retaining measurement methods.",
+          "source": "https://europepmc.org/article/MED/29186554"
+        },
+        {
+          "group": "domains",
+          "tag": "Development & reproduction",
+          "basis": "Preclinical tNGS chromosome-screening validation uses a custom bioinformatics pipeline for karyotype determination and compares diagnostic consistency with reference platforms. Adds software/data processing and statistical validation, retaining measurement methods.",
+          "source": "https://europepmc.org/article/MED/29186554"
+        }
+      ]
     },
     {
       "id": "scholar-087",
@@ -3127,15 +3528,31 @@
         "year": "2019",
         "publisher": "Mosby"
       },
-      "methods": [],
+      "methods": [
+        "Machine learning & statistical methods"
+      ],
       "domains": [
         "Development & reproduction"
       ],
-      "classification_basis": "Title-based discovery tags; full-text classification not reviewed",
+      "classification_basis": "Title-based discovery tags with source-supported additions",
       "review_flags": [],
       "public_listing": true,
       "format": "Journal record",
-      "links": []
+      "links": [],
+      "classification_evidence": [
+        {
+          "group": "methods",
+          "tag": "Machine learning & statistical methods",
+          "basis": "Double-blind randomized crossover trial with matched controls reports adjusted treatment differences, confidence intervals and subgroup/outcome analyses.",
+          "source": "https://europepmc.org/article/MED/30365922"
+        },
+        {
+          "group": "domains",
+          "tag": "Development & reproduction",
+          "basis": "Double-blind randomized crossover trial with matched controls reports adjusted treatment differences, confidence intervals and subgroup/outcome analyses.",
+          "source": "https://europepmc.org/article/MED/30365922"
+        }
+      ]
     },
     {
       "id": "scholar-095",
